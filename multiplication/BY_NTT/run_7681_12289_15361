@@ -1,0 +1,6 @@
+#!/bin/csh
+
+./poly_mul_test_gen.sage > data_rom.v
+
+ncverilog tb_ntt.v ntt_7681_12289_15361.v data_rom.v bram.v mod4591Svec33.v mod4591S33.v modmul7681s.v mod12289s.v modmul15361s.v +access+r
+
