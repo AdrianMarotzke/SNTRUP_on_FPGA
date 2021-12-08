@@ -4,7 +4,7 @@
 
 This is a constant-time hardware implementation of round 3 Streamlined NTRU Prime. This is the code from the paper https://eprint.iacr.org/2021/1444.
 
-The following table contains the performance numbers for the parameter sntrup761, on a Xilinx Zynq Ultrascale +:
+The following table contains the performance numbers for the parameter sntrup761, on a Xilinx Zynq Ultrascale+:
 | Design     | Module  | Slices  | LUT     | FF      | BRAM | DSP | Freq MHz| Cycles | Time     |
 |------------|---------|--------:|--------:|--------:|-----:|----:|--------:|-------:|---------:|
 | High speed | Key Gen | 6,038   | 37,813  | 25,368  | 33   | 23  | 285     | 64,026 | 224.7 us |
@@ -18,15 +18,15 @@ The following table contains the performance numbers for the parameter sntrup761
 The following table contains the performance numbers for the parameter sntrup761, on a Xilinx Artix 7:
 | Design     | Module  | Slices | LUT    | FF     |  BRAM | DSP  | Freq MHz| Cycles | Time     |
 |------------|---------|-------:|-------:|-------:|------:|-----:|--------:|-------:|---------:|
-| high speed | Key Gen | 10,827 | 39,200 | 25,536 | 33.5  | 23   | 143     | 64,026 | 447.7 us |
+| High speed | Key Gen | 10,827 | 39,200 | 25,536 | 33.5  | 23   | 143     | 64,026 | 447.7 us |
 |            | Encap   | 11,218 | 40,879 | 22,382 | 4.5   | 6    | 144     | 5,007  | 34.8 us  |
 |            | Decap   | 10,169 | 36,789 | 22,700 | 3.5   | 9    | 137     | 10,989 | 80.2 us  |
-| low area   | Key Gen | 2,376  | 7,579  | 3,824  | 5.5   | 12   | 159     | 629,367| 3,958 us |
+| Low area   | Key Gen | 2,376  | 7,579  | 3,824  | 5.5   | 12   | 159     | 629,367| 3,958 us |
 |            | Encap   | 1,945  | 6,379  | 3,069  | 4.5   | 6    | 147     | 29,245 | 198.9 us |
 |            | Decap   | 1,842  | 6,279  | 3,086  | 3     | 7    | 131     | 85,628 | 653.6 us |
 
 
-The following table contains the numbers for thefull implementation for the parameter sntrup761, with all operations merged.
+The following table contains the numbers for the full implementation for the parameter sntrup761, with all operations merged.
 | Design     | Platform         | Slices   | LUT      | FF       | BRAM | DSP | Freq (MHz) |
 |------------|------------------|----------:|----------:|----------:|------:|-----:|------------:|
 | High speed | Zynq Ultrascale+ | 7051     | 40,060   | 26,384   | 36.5 | 31  | 285        |
