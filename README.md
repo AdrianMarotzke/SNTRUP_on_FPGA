@@ -5,25 +5,25 @@
 This is a constant time hardware implementation of round 3 Streamlined NTRU Prime. This is the code from the paper https://eprint.iacr.org/2021/1444.
 
 The following table contains the performance numbers for the parameter set sntrup761, on a Xilinx Zynq Ultrascale +:
-| Design     | Module  | Slices | LUT    | FF     | BRAM | DSP | Freq (MHz) | Cycles  | Time         |
-|------------|---------|--------:|--------:|--------:|------:|-----:|------------:|---------:|--------------:|
-| High speed | Key Gen | 6,038  | 37,813 | 25,368 | 33   | 23  | 285        | 64,026  | 224.7 $\mu$s |
-|            | Encap   | 5,381  | 31,996 | 22,425 | 4.5  | 6   | 289        | 5,007   | 17.3 $\mu$s  |
-|            | Decap   | 5,432  | 32,301 | 22,724 | 3.5  | 9   | 285        | 10,989  | 38.6 $\mu$s  |
-| Low area   | Key Gen | 1,232  | 7,216  | 3,726  | 5.5  | 12  | 285        | 629,367 | 2,208 $\mu$s |
-|            | Encap   | 1,074  | 6,030  | 3,211  | 4.5  | 7   | 290        | 29,245  | 100.8 $\mu$s |
-|            | Decap   | 1,051  | 6,016  | 3,194  | 3    | 7   | 283        | 85,628  | 302.6 $\mu$s |
+| Design     | Module  | Slices  | LUT     | FF      | BRAM | DSP | Freq MHz| Cycles | Time     |
+|------------|---------|--------:|--------:|--------:|-----:|----:|--------:|-------:|---------:|
+| High speed | Key Gen | 6,038   | 37,813  | 25,368  | 33   | 23  | 285     | 64,026 | 224.7 us |
+|            | Encap   | 5,381   | 31,996  | 22,425  | 4.5  | 6   | 289     | 5,007  | 17.3 us  |
+|            | Decap   | 5,432   | 32,301  | 22,724  | 3.5  | 9   | 285     | 10,989 | 38.6 us  |
+| Low area   | Key Gen | 1,232   | 7,216   | 3,726   | 5.5  | 12  | 285     | 629,367| 2,208 us |
+|            | Encap   | 1,074   | 6,030   | 3,211   | 4.5  | 7   | 290     | 29,245 | 100.8 us |
+|            | Decap   | 1,051   | 6,016   | 3,194   | 3    | 7   | 283     | 85,628 | 302.6 us |
 
 
 The following table contains the performance numbers for the parameter set sntrup761, on a Xilinx Artix 7:
-| Design     | Module  | Slices | LUT    | FF     | BRAM | DSP | Freq (MHz) | Cycles  | Time         |
-|------------|---------|--------:|--------:|--------:|------:|-----:|------------:|---------:|--------------:|
-| high speed | Key Gen | 10,827 | 39,200 | 25,536 | 33.5 | 23  | 143        | 64,026  | 447.7 $\mu$s |
-|            | Encap   | 11,218 | 40,879 | 22,382 | 4.5  | 6   | 144        | 5,007   | 34.8 $\mu$s  |
-|            | Decap   | 10,169 | 36,789 | 22,700 | 3.5  | 9   | 137        | 10,989  | 80.2 $\mu$s  |
-| low area   | Key Gen | 2,376  | 7,579  | 3,824  | 5.5  | 12  | 159        | 629,367 | 3,958 $\mu$s |
-|            | Encap   | 1,945  | 6,379  | 3,069  | 4.5  | 6   | 147        | 29,245  | 198.9 $\mu$s |
-|            | Decap   | 1,842  | 6,279  | 3,086  | 3    | 7   | 131        | 85,628  | 653.6 $\mu$s |
+| Design     | Module  | Slices | LUT    | FF     |  BRAM | DSP  | Freq MHz| Cycles | Time     |
+|------------|---------|-------:|-------:|-------:|------:|-----:|--------:|-------:|---------:|
+| high speed | Key Gen | 10,827 | 39,200 | 25,536 | 33.5  | 23   | 143     | 64,026 | 447.7 us |
+|            | Encap   | 11,218 | 40,879 | 22,382 | 4.5   | 6    | 144     | 5,007  | 34.8 us  |
+|            | Decap   | 10,169 | 36,789 | 22,700 | 3.5   | 9    | 137     | 10,989 | 80.2 us  |
+| low area   | Key Gen | 2,376  | 7,579  | 3,824  | 5.5   | 12   | 159     | 629,367| 3,958 us |
+|            | Encap   | 1,945  | 6,379  | 3,069  | 4.5   | 6    | 147     | 29,245 | 198.9 us |
+|            | Decap   | 1,842  | 6,279  | 3,086  | 3     | 7    | 131     | 85,628 | 653.6 us |
 
 
 The following table contains the numbers for full implementation, with all operations merged.
