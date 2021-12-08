@@ -38,7 +38,7 @@ The file constants.pkg.vhd contains some user configurable constants.
 
 Only the parameter set sntrup761 is currently supported fully, others can be selected with the constant "use_parameter_set" in the file constants.pkg.vhd.
 
-Batch key generation and the batch size can be set with the constant "BATCH_SIZE". Batch sizes of 5, 21 and 42 are recomended. Set to 0 to disable batch keygen.
+Batch key generation and the batch size can be set with the constant "BATCH_SIZE". Batch sizes of 5, 21 and 42 are recommended. Set to 0 to disable batch keygen.
 
 The constant "keygen_vector_width" sets the vector width during rq inversion. 2 to the power of this constant are the number of parallel divsteps.
 
@@ -51,9 +51,9 @@ The top module is ntru_prime_top, the corrosponding testbench is tb_ntru_prime_t
 
 The testbench is in the folder tb. The testbench uses stimulus data gathered from the KAT from the NIST submission of Streamlined NTRU Prime (https://ntruprime.cr.yp.to/nist.html). Data for 50 KAT for the three parameter sets are in folder tb\tb_stimulus\, tb_ntru_prime_top will automatically select the correct test data.
 
-The folder sha-512 contains an implementation of the SHA-512 hash function based on the implemention from https://github.com/dsaves/SHA-512, as well as the wrapper.
+The folder sha-512 contains an implementation  of the SHA-512 hash function based on the implementation  from https://github.com/dsaves/SHA-512, as well as the wrapper.
 
 The folder misc contains some miscellaneous items, such as block ram and stack memory, that are need across the design.
 
-The folders encapsulation, decapsulation, keygen, multiplication and encoding contain the respective vhdl files for that operation.
+The folders encapsulation, decapsulation, keygen, multiplication and encoding contain the respective vhdl and verilog files for that operation.
 
