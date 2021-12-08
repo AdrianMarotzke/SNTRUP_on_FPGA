@@ -42,7 +42,7 @@ Batch key generation and the batch size can be set with the constant "BATCH_SIZE
 
 The constant "keygen_vector_width" sets the vector width during rq inversion. 2 to the power of this constant are the number of parallel divsteps.
 
-Set "use_rq_mult_parallel_ram" to true to use the smaller, but also smaller multiplier.
+Set "use_rq_mult_parallel_ram" to true to use the smaller, but also slower multiplier.
 
 Set "seperate_cipher_decode" to false to remove the second decoder during decapsulation. Decoding then happens sequentially.
 
