@@ -1,4 +1,4 @@
-module ntt (clk, rst, start, input_fg, addr, din, dout, valid);
+module ntt_7681_12289_15361 (clk, rst, start, input_fg, addr, din, dout, valid);
 
     parameter P_WIDTH = 13;
     parameter Q1 = 7681;
